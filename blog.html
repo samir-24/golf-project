@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluum-Golf</title>
+
+    <!-- favicon icon  -->
+    <link rel="icon" href="./assests/images/logo/favicon.png" type="image/png">
+
+    <!-- bootstrap attach     -->
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="./assests/css/bootstrap-icons.min.css">
+
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="./assests/css/all.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+
+    <!-- fonts attachment  -->
+    <link rel="stylesheet" href="./assests/css/stylesheet.css">
+
+    <!-- media attachment  -->
+    <link rel="stylesheet" href="./assests/css/media.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar p-3 bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <a href="#">
+                            <img src="./assests/images/logo/logo.png" alt="logo" style="width:70%;">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <div class="navbar-list">
+                            <ul
+                                class="navbar-nav text-center me-auto mb-2 mb-lg-0 d-flex flex-row gap-4 justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fw-medium text-dark text-uppercase custom-hover position-relative fw-semibold"
+                                        href="#">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Product <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                                        <li><a class="dropdown-item" href="./collection.html" target="_blank">Collection
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Shop <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                                        <li><a class="dropdown-item" href="#">Shop Category 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Shop Category 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Blog <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                        <li><a class="dropdown-item" href="./blog.html" target="_blank">Blog Post 1</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Page <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="pageDropdown">
+                                        <li><a class="dropdown-item" href="./about.html" target="_blank">About Us</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html" target="_blank">Contact</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <div class="activity">
+                            <ul class="d-flex gap-5">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-person"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i> / 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#cart" data-bs-toggle="offcanvas">
+                                        <i class="bi bi-cart"></i> / 4
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a href="">
+                            <i class="bi bi-list fs-3"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- sub-header section  -->
+        <section class="sub-header p-4 position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-5 col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-9 col-12 text-center">
+                        <div class="header d-flex flex-column justify-content-center align-items-center">
+                            <nav class="text-white"
+                                style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%23ffff'/%3E%3C/svg%3E&#34;);"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="./index.html" class="text-white">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="text-white">Blog</a></li>
+                                </ol>
+                            </nav>
+
+                            <h2 class=" text-white fw-semibold">Blog without sidebar</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog section  -->
+        <section class="blog py-100">
+            <div class="container">
+                <h2 class="text-center fs-1 fw-semibold">Our Blog</h2>
+                <div class="row pt-5 justify-content-center">
+                    <div class="col-4 col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-12">
+                        <div class="blog-bx p-2 position-relative">
+
+                            <div class="blog-img position-relative overflow-hidden">
+                                <a href="#">
+                                    <img src="./assests/images/blog/blog1.jpg" alt="blog1" class="img-fluid">
+                                </a>
+
+                                <!-- overlay  -->
+                                <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- read more  -->
+                                <button
+                                    class="read-more-btn position-absolute top-50 start-50 translate-middle bg-secondary border-0 text-uppercase fs-6 text-white fw-semibold"
+                                    style="padding: 10px 30px 10px 30px;">read more</button>
+
+                            </div>
+
+                            <div class="date bg-white position-absolute ps-5 pe-5 pt-2 pb-2"
+                                style="bottom: 36%; right:16.5%; padding: 5px 10px;">
+                                <span class="fw-semibold text-secondary text-uppercase">28, Jan 2024 | Golffacts</span>
+                            </div>
+
+                            <div class="blog-content pt-4">
+                                <h6 class="fw-semibold">Elite golf gear for champions on the course</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-12">
+                        <div class="blog-bx p-2 position-relative">
+                            <div class="blog-img position-relative">
+                                <a href="#">
+                                    <img src="./assests/images/blog/blog2.jpg" alt="blog2" class="img-fluid">
+                                </a>
+
+                                <!-- overlay  -->
+                                <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- read more  -->
+                                <button
+                                    class="read-more-btn position-absolute top-50 start-50 translate-middle bg-secondary border-0 text-uppercase fs-6 text-white fw-semibold"
+                                    style="padding: 10px 30px 10px 30px;">read more</button>
+
+                            </div>
+
+                            <div class="date bg-white position-absolute ps-5 pe-5 pt-2 pb-2"
+                                style="bottom: 36%; right:16.5%; padding: 5px 10px;">
+                                <span class="fw-semibold text-secondary text-uppercase">10, Jan 2024 | Golftips</span>
+                            </div>
+
+                            <div class="blog-content pt-4">
+                                <h6 class="fw-semibold">Top golf gear to elevate your performance</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-12">
+                        <div class="blog-bx p-2 position-relative">
+                            <div class="blog-img position-relative">
+                                <a href="#">
+                                    <img src="./assests/images/blog/blog3.jpg" alt="blog3" class="img-fluid">
+                                </a>
+
+                                <!-- overlay  -->
+                                <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- read more  -->
+                                <button
+                                    class="read-more-btn position-absolute top-50 start-50 translate-middle bg-secondary border-0 text-uppercase fs-6 text-white fw-semibold"
+                                    style="padding: 10px 30px 10px 30px;">read more</button>
+                            </div>
+
+                            <div class="date bg-white position-absolute ps-5 pe-5 pt-2 pb-2"
+                                style="bottom: 36%; right:16.5%; padding: 5px 10px;">
+                                <span class="fw-semibold text-secondary text-uppercase">20, Jan 2024 | Progear</span>
+                            </div>
+
+                            <div class="blog-content pt-4">
+                                <h6 class="fw-semibold">High-quality golf essentials for every player</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4 col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-12">
+                        <div class="blog-bx p-2 position-relative">
+
+                            <div class="blog-img position-relative overflow-hidden">
+                                <a href="#">
+                                    <img src="./assests/images/blog/blog5.jpg" alt="blog1" class="img-fluid">
+                                </a>
+
+                                <!-- overlay  -->
+                                <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- read more  -->
+                                <button
+                                    class="read-more-btn position-absolute top-50 start-50 translate-middle bg-secondary border-0 text-uppercase fs-6 text-white fw-semibold"
+                                    style="padding: 10px 30px 10px 30px;">read more</button>
+
+                            </div>
+
+                            <div class="date bg-white position-absolute ps-5 pe-5 pt-2 pb-2"
+                                style="bottom: 36%; right:16.5%; padding: 5px 10px;">
+                                <span class="fw-semibold text-secondary text-uppercase">28, Jan 2024 | Golffacts</span>
+                            </div>
+
+                            <div class="blog-content pt-4">
+                                <h6 class="fw-semibold">Master every swing with pro golf equipment</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-12">
+                        <div class="blog-bx p-2 position-relative">
+                            <div class="blog-img position-relative">
+                                <a href="#">
+                                    <img src="./assests/images/blog/blog4.jpg" alt="blog2" class="img-fluid">
+                                </a>
+
+                                <!-- overlay  -->
+                                <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- read more  -->
+                                <button
+                                    class="read-more-btn position-absolute top-50 start-50 translate-middle bg-secondary border-0 text-uppercase fs-6 text-white fw-semibold"
+                                    style="padding: 10px 30px 10px 30px;">read more</button>
+
+                            </div>
+
+                            <div class="date bg-white position-absolute ps-5 pe-5 pt-2 pb-2"
+                                style="bottom: 36%; right:16.5%; padding: 5px 10px;">
+                                <span class="fw-semibold text-secondary text-uppercase">10, Jan 2024 | Golftips</span>
+                            </div>
+
+                            <div class="blog-content pt-4">
+                                <h6 class="fw-semibold">Premium golf clubs and accessories collection</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-12">
+                        <div class="blog-bx p-2 position-relative">
+                            <div class="blog-img position-relative">
+                                <a href="#">
+                                    <img src="./assests/images/blog/blog6.jpg" alt="blog3" class="img-fluid">
+                                </a>
+
+                                <!-- overlay  -->
+                                <div class="gradient-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                                <!-- read more  -->
+                                <button
+                                    class="read-more-btn position-absolute top-50 start-50 translate-middle bg-secondary border-0 text-uppercase fs-6 text-white fw-semibold"
+                                    style="padding: 10px 30px 10px 30px;">read more</button>
+                            </div>
+
+                            <div class="date bg-white position-absolute ps-5 pe-5 pt-2 pb-2"
+                                style="bottom: 36%; right:16.5%; padding: 5px 10px;">
+                                <span class="fw-semibold text-secondary text-uppercase">02, Feb 2024 | Golftalk</span>
+                            </div>
+
+                            <div class="blog-content pt-4">
+                                <h6 class="fw-semibold">Unleash your best game with expert golf gear</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary">
+        <div class="footer-news py-100 border-bottom">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-xxl-3 col-xl-3 col-md-6 col-sm-12">
+                        <div class="news-content">
+                            <h3 class="fs-1 fw-semibold">Newsletter</h3>
+                            <p>Subscribe our newsletter to get the latest updates on our products.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-3 col-xl-3 col-md-6 col-sm-12">
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control pt-2 pb-2 pe-5 ps-5 rounded-0 text-center"
+                                    placeholder="Enter your email">
+                            </div>
+                            <button type="submit"
+                                class="btn bg-secondary text-white fw-bold rounded-0 pt-2 pb-2 fs-5   w-100 pe-5 ps-5">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-xxl-6 col-xl-6 col-md-12 col-sm-12">
+                        <div class="foot-img d-flex justify-content-end">
+                            <div class="row justify-content-end">
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot`.jpg" alt="footer1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot2.jpg" alt="footer2" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot3.jpg" alt="footer3" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot4.jpg" alt="footer4" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer py-100">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-3 col-lg-2 order-2 order-lg-0">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Information</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">About us</a></li>
+                                <li class="pb-2"><a href="#">Contact us</a></li>
+                                <li class="pb-2"><a href="#">Faqs</a></li>
+                                <li class="pb-2"><a href="#">News</a></li>
+                                <li class="pb-2"><a href="#">Store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-3 order-lg-1">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Quick links</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">404</a></li>
+                                <li class="pb-2"><a href="#">Coming soon</a></li>
+                                <li class="pb-2"><a href="#">Cookie</a></li>
+                                <li class="pb-2"><a href="#">Legal</a></li>
+                                <li class="pb-2"><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 order-first order-lg-2">
+                        <div class="foot-logo text-center">
+                            <a href="#">
+                                <img src="./assests/images/logo/logo.png" alt="footer-logo"
+                                    class="img-fluid mx-auto d-block" style="width: 100%; max-width: 120px;">
+                            </a>
+                        </div>
+                        <p class="text-center pt-4">easily store your golf clubs, golf balls, tees and more in the
+                            numerous storage pockets.</p>
+
+                        <div class="socials d-flex gap-3 justify-content-center">
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-4 order-lg-3">
+
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Policies</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">Payment policies</a></li>
+                                <li class="pb-2"><a href="#">Privacy policies</a></li>
+                                <li class="pb-2"><a href="#">Return policies</a></li>
+                                <li class="pb-2"><a href="#">Shipping policies</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-5 order-lg-4">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Contact us </h5>
+                            <ul>
+                                <li class="pb-3"><a href="https://maps.app.goo.gl/t6encnEcpKUsKrMe9"
+                                        target="_blank">1234 MG road, Bengaluru
+                                        Karnataka 560001, India</a></li>
+                                <li class="pb-3"><a href="tel:98765-43210">+91 98765-43210</a></li>
+                                <li style="max-width: 200px; word-break: break-word;"><a
+                                        href="mailto:info@demowebsite.com">info@demowebsite.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-bottom p-3 bg-white">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-3">
+                        <p class="m-0">Powered by spacingtechTM</p>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <div class="bottom-img d-flex">
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-american.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-maestro.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-paypal.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-visa.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- offcanvas cart  -->
+    <div class="offcanvas offcanvas-end" id="cart">
+        <div class="offcanvas-header">
+            <div class="title">
+                <h3>Cart</h3>
+            </div>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Cart is empty</p>
+        </div>
+
+    </div>
+
+    <!-- js file links  -->
+    <script src="./assests/js/bootstrap.min.js"></script>
+    <script src="./assests/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

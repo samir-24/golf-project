@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluum-Golf</title>
+
+    <!-- favicon icon  -->
+    <link rel="icon" href="./assests/images/logo/favicon.png" type="image/png">
+
+    <!-- bootstrap attach     -->
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="./assests/css/bootstrap-icons.min.css">
+
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="./assests/css/all.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+
+    <!-- fonts attachment  -->
+    <link rel="stylesheet" href="./assests/css/stylesheet.css">
+
+    <!-- media query attachment  -->
+    <link rel="stylesheet" href="./assests/css/media.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar p-3 bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <a href="#">
+                            <img src="./assests/images/logo/logo.png" alt="logo" style="width:70%;">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <div class="navbar-list">
+                            <ul
+                                class="navbar-nav text-center me-auto mb-2 mb-lg-0 d-flex flex-row gap-4 justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fw-medium text-dark text-uppercase custom-hover position-relative fw-semibold"
+                                        href="#">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Product <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                                        <li><a class="dropdown-item" href="./collection.html" target="_blank">Collection
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Shop <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                                        <li><a class="dropdown-item" href="#">Shop Category 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Shop Category 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Blog <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                        <li><a class="dropdown-item" href="./blog.html" target="_blank">Blog Post 1</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Page <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="pageDropdown">
+                                        <li><a class="dropdown-item" href="./about.html" target="_blank">About Us</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html" target="_blank">Contact</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <div class="activity">
+                            <ul class="d-flex gap-5">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-person"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i> / 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#cart" data-bs-toggle="offcanvas">
+                                        <i class="bi bi-cart"></i> / 4
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a href="">
+                            <i class="bi bi-list fs-3"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- sub-header section  -->
+        <section class="sub-header p-4 position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-5 col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-9 col-12 text-center">
+                        <div class="header d-flex flex-column justify-content-center align-items-center">
+                            <nav class="text-white"
+                                style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%23ffff'/%3E%3C/svg%3E&#34;);"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="./index.html" class="text-white">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="text-white">Collection category</a>
+                                    </li>
+                                </ol>
+                            </nav>
+
+                            <h2 class=" text-white fw-semibold">Collection category</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- items section  -->
+        <section class="items pt-100">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-2 col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="items-bx position-relative">
+                                <div class="item-img">
+                                    <img src="./assests/images/items/it1.jpg" alt="item1" class="img-fluid">
+                                </div>
+
+                                <div class="item-name bg-white ps-4 pe-4 width-100 position-absolute text-center pt-2 pb-2"
+                                    style="bottom: 8%; right:14%;">
+                                    <span class="fw-semibold hover">Golf apparel</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="items-bx position-relative">
+                                <div class="item-img">
+                                    <img src="./assests/images/items/it2.jpg" alt="item1" class="img-fluid">
+                                </div>
+
+                                <div class="item-name bg-white ps-4 pe-4 width-100 position-absolute text-center pt-2 pb-2"
+                                    style="bottom: 8%; right:14%;">
+                                    <span class="fw-semibold">Golf shoes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="items-bx position-relative">
+                                <div class="item-img">
+                                    <img src="./assests/images/items/it3.jpg" alt="item1" class="img-fluid">
+                                </div>
+
+                                <div class="item-name bg-white ps-4 pe-4 width-100 position-absolute text-center pt-2 pb-2"
+                                    style="bottom: 8%; right:14%;">
+                                    <span class="fw-semibold">Golf gloves</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="items-bx position-relative">
+                                <div class="item-img">
+                                    <img src="./assests/images/items/it4.jpg" alt="item1" class="img-fluid">
+                                </div>
+
+                                <div class="item-name bg-white ps-4 pe-4 width-100 position-absolute text-center pt-2 pb-2"
+                                    style="bottom: 8%; right:14%;">
+                                    <span class="fw-semibold">Training aids</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="items-bx position-relative">
+                                <div class="item-img">
+                                    <img src="./assests/images/items/it5.jpg" alt="item1" class="img-fluid">
+                                </div>
+
+                                <div class="item-name bg-white ps-4 pe-4 width-100 position-absolute text-center pt-2 pb-2"
+                                    style="bottom: 8%; right:14%;">
+                                    <span class="fw-semibold">Golf carts</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="items-bx position-relative">
+                                <div class="item-img">
+                                    <img src="./assests/images/items/it6.jpg" alt="item1" class="img-fluid">
+                                </div>
+
+                                <div class="item-name bg-white ps-4 pe-4 width-100 position-absolute text-center pt-2 pb-2"
+                                    style="bottom: 8%; right:14%;">
+                                    <span class="fw-semibold">Golf bags</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- category section  -->
+        <section class="bg-golf pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner-collection">
+                            <img src="./assests/images/collection/collection-banner.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-filter row pt-4 justify-content-between">
+                    <div class="col-7">
+                        <div class="shop-filter">
+                            <ul class="d-flex gap-4">
+                                <li>
+                                    <button class="border-0 bg-transparent">
+                                        <i class="bi bi-funnel"></i>
+                                        Filter
+                                    </button>
+                                </li>
+                                <li class="d-flex gap-3">
+                                    <a href="#">
+                                        <i class="bi bi-grid text-dark"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-list"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <p>Showing 12 products of 12</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="sorting-items d-flex gap-3">
+                            <h6 class="fw-semibold">Sort by:</h6>
+                            <select name="sorting" id="sort">
+                                <option selected value="Alphabetically, A-Z">Alphabetically, A-Z</option>
+                                <option value="Featured">Featured</option>
+                                <option value="Best selling">Best selling</option>
+                                <option value="Alphabetically, Z-A">Alphabetically, Z-A</option>
+                                <option value="Price ,High to low">Price ,High to low</option>
+                                <option value="Price ,Low to high">Price ,Low to high</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-con row pt-3 pb-5">
+                    <div class="col-12">
+                        <ul class="d-flex gap-1" style="font-size: 14px;">
+                            <li>
+                                <a href="#" class="bg-dark text-white pt-1 pb-1 pe-3 ps-3">
+                                    Out of stock
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="bg-dark text-white pt-1 pb-1 pe-3 ps-3">
+                                    In stock
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="bg-dark text-white pt-1 pb-1 pe-3 ps-3">
+                                    Aliceblue
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="bg-dark text-white pt-1 pb-1 pe-3 ps-3">
+                                    Prolite
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="bg-dark text-white pt-1 pb-1 pe-3 ps-3">
+                                    Golfgear
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <button type="submit" class="border-0 bg-transparent text-decoration-underline">
+                                    Clear all
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product section  -->
+        <section class="product bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-1.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Power wedge</h6>
+                            <p class="text-secondary fw-bold m-0">$79.00 <del style="color: var(--text-light);">$
+                                    89.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-2.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Green putter</h6>
+                            <p class="text-secondary fw-bold m-0">$79.00 <del style="color: var(--text-light);">$
+                                    89.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-5.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Turbo driver</h6>
+                            <p class="text-secondary fw-bold m-0">$79.00 <del style="color: var(--text-light);">$
+                                    89.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-11.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Angle shaft</h6>
+                            <p class="text-secondary fw-bold m-0">$79.00 <del style="color: var(--text-light);">$
+                                    89.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-7.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Swift swing mat</h6>
+                            <p class="text-secondary fw-bold m-0">$49.00 <del style="color: var(--text-light);">$
+                                    54.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-10.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Swift swing mat</h6>
+                            <p class="text-secondary fw-bold m-0">$89.00 <del style="color: var(--text-light);">$
+                                    99.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-13.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Laser scope</h6>
+                            <p class="text-secondary fw-bold m-0">$29.00 <del style="color: var(--text-light);">$
+                                    39.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-15.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Strike grip</h6>
+                            <p class="text-secondary fw-bold m-0">$14.00 <del style="color: var(--text-light);">$
+                                    119.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-17.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Fusion cart bag</h6>
+                            <p class="text-secondary fw-bold m-0">$64.00 <del style="color: var(--text-light);">$
+                                    74.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 pb-100">
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-23.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Speed tee set</h6>
+                            <p class="text-secondary fw-bold m-0">$9.00 <del style="color: var(--text-light);">$
+                                    14.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-19.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Metal range net</h6>
+                            <p class="text-secondary fw-bold m-0">$34.00 <del style="color: var(--text-light);">$
+                                    44.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="product-bx bg-light p-3">
+                            <div class="product-img">
+                                <img src="./assests/images/products/p-21.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="product-content text-center pt-4">
+                            <h6 class="fw-normal fs-6">Sharp chipper</h6>
+                            <p class="text-secondary fw-bold m-0">$4.00 <del style="color: var(--text-light);">$
+                                    9.00</del> </p>
+                            <div class="stars text-warning pt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary">
+        <div class="footer-news py-100 border-bottom">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-xxl-3 col-xl-3 col-md-6 col-sm-12">
+                        <div class="news-content">
+                            <h3 class="fs-1 fw-semibold">Newsletter</h3>
+                            <p>Subscribe our newsletter to get the latest updates on our products.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-3 col-xl-3 col-md-6 col-sm-12">
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control pt-2 pb-2 pe-5 ps-5 rounded-0 text-center"
+                                    placeholder="Enter your email">
+                            </div>
+                            <button type="submit"
+                                class="btn bg-secondary text-white fw-bold rounded-0 pt-2 pb-2 fs-5   w-100 pe-5 ps-5">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-xxl-6 col-xl-6 col-md-12 col-sm-12">
+                        <div class="foot-img d-flex justify-content-end">
+                            <div class="row justify-content-end">
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot`.jpg" alt="footer1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot2.jpg" alt="footer2" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot3.jpg" alt="footer3" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot4.jpg" alt="footer4" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer py-100">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-3 col-lg-2 order-2 order-lg-0">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Information</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">About us</a></li>
+                                <li class="pb-2"><a href="#">Contact us</a></li>
+                                <li class="pb-2"><a href="#">Faqs</a></li>
+                                <li class="pb-2"><a href="#">News</a></li>
+                                <li class="pb-2"><a href="#">Store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-3 order-lg-1">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Quick links</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">404</a></li>
+                                <li class="pb-2"><a href="#">Coming soon</a></li>
+                                <li class="pb-2"><a href="#">Cookie</a></li>
+                                <li class="pb-2"><a href="#">Legal</a></li>
+                                <li class="pb-2"><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 order-first order-lg-2">
+                        <div class="foot-logo text-center">
+                            <a href="#">
+                                <img src="./assests/images/logo/logo.png" alt="footer-logo"
+                                    class="img-fluid mx-auto d-block" style="width: 100%; max-width: 120px;">
+                            </a>
+                        </div>
+                        <p class="text-center pt-4">easily store your golf clubs, golf balls, tees and more in the
+                            numerous storage pockets.</p>
+
+                        <div class="socials d-flex gap-3 justify-content-center">
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-4 order-lg-3">
+
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Policies</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">Payment policies</a></li>
+                                <li class="pb-2"><a href="#">Privacy policies</a></li>
+                                <li class="pb-2"><a href="#">Return policies</a></li>
+                                <li class="pb-2"><a href="#">Shipping policies</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-5 order-lg-4">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Contact us </h5>
+                            <ul>
+                                <li class="pb-3"><a href="https://maps.app.goo.gl/t6encnEcpKUsKrMe9"
+                                        target="_blank">1234 MG road, Bengaluru
+                                        Karnataka 560001, India</a></li>
+                                <li class="pb-3"><a href="tel:98765-43210">+91 98765-43210</a></li>
+                                <li style="max-width: 200px; word-break: break-word;"><a
+                                        href="mailto:info@demowebsite.com">info@demowebsite.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-bottom p-3 bg-white">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-3">
+                        <p class="m-0">Powered by spacingtechTM</p>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <div class="bottom-img d-flex">
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-american.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-maestro.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-paypal.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-visa.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- offcanvas cart section  -->
+    <div class="offcanvas offcanvas-end" id="cart">
+        <div class="offcanvas-header">
+            <div class="title">
+                <h3>Cart</h3>
+            </div>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Cart is empty</p>
+        </div>
+
+    </div>
+
+    <!-- js file links  -->
+    <script src="./assests/js/bootstrap.min.js"></script>
+    <script src="./assests/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluum-Golf</title>
+
+    <!-- favicon icon  -->
+    <link rel="icon" href="./assests/images/logo/favicon.png" type="image/png">
+
+    <!-- bootstrap attach     -->
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="./assests/css/bootstrap-icons.min.css">
+
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="./assests/css/all.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+
+    <!-- fonts attachment  -->
+    <link rel="stylesheet" href="./assests/css/stylesheet.css">
+
+    <!-- media query attachment  -->
+    <link rel="stylesheet" href="./assests/css/media.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar p-3 bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <a href="#">
+                            <img src="./assests/images/logo/logo.png" alt="logo" style="width:70%;">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <div class="navbar-list">
+                            <ul
+                                class="navbar-nav text-center me-auto mb-2 mb-lg-0 d-flex flex-row gap-4 justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link fs-6 fw-medium text-dark text-uppercase custom-hover position-relative fw-semibold"
+                                        href="#">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Product <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                                        <li><a class="dropdown-item" href="./collection.html" target="_blank">Collection
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Shop <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                                        <li><a class="dropdown-item" href="#">Shop Category 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Shop Category 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Blog <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                        <li><a class="dropdown-item" href="./blog.html" target="_blank">Blog Post 1</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fs-6 fw-medium text-dark text-uppercase position-relative fw-semibold"
+                                        href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Page <i class="bi bi-chevron-down text-dark"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="pageDropdown">
+                                        <li><a class="dropdown-item" href="./about.html" target="_blank">About Us</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html" target="_blank">Contact</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <div class="activity">
+                            <ul class="d-flex gap-5">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-person"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-heart"></i> / 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#cart" data-bs-toggle="offcanvas">
+                                        <i class="bi bi-cart"></i> / 4
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a href="">
+                            <i class="bi bi-list fs-3"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- sub header  -->
+        <section class="sub-header p-4 position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-5 col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-9 col-12 text-center">
+                        <div class="header d-flex flex-column justify-content-center align-items-center">
+                            <nav class="text-white"
+                                style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%23ffff'/%3E%3C/svg%3E&#34;);"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="./index.html" class="text-white">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="text-white">Contact us</a></li>
+                                </ol>
+                            </nav>
+
+                            <h2 class=" text-white fw-semibold">Contact us</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- rapid assist section  -->
+        <section class="rapid py-100">
+            <div class="container">
+                <h2 class="text-center fs-1 fw-semibold pb-5">Rapid Assist</h2>
+                <div class="row justify-content-center g-3">
+                    <div class="col-4 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div class="rapid-assist d-flex flex-column justify-content-center align-items-center">
+                            <div class="rapid-icon bg-primary d-flex justify-content-center align-items-center mb-4"
+                                style="width: 80px; height: 80px;border-radius: 50%;">
+                                <i class="bi bi-truck fs-4 text-secondary"></i>
+                            </div>
+                            <div class="rapid-text w-50 text-center">
+                                <a href="https://maps.app.goo.gl/bT5pt9zzTjFd61fq7" target="_blank">
+                                    <p>1234 MG road, Bengaluru
+                                        Karnataka 560001, India</p>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div class="rapid-assist d-flex flex-column justify-content-center align-items-center">
+                            <div class="rapid-icon bg-primary d-flex justify-content-center align-items-center mb-4"
+                                style="width: 80px; height: 80px;border-radius: 50%;">
+                                <i class="bi bi-telephone fs-4 text-secondary"></i>
+                            </div>
+                            <div class="rapid-text w-50 text-center">
+                                <a href="tel:+91 98765-43210">
+                                    <span>+91 98765-43210</span>
+                                </a>
+                                <br>
+                                <a href="tel:+91 99887-65432">
+                                    <span>+91 99887-65432</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col- col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div class="rapid-assist d-flex flex-column justify-content-center align-items-center">
+                            <div class="rapid-icon bg-primary d-flex justify-content-center align-items-center mb-4"
+                                style="width: 80px; height: 80px;border-radius: 50%;">
+                                <i class="bi bi-envelope text-secondary fs-4"></i>
+                            </div>
+                            <div class="rapid-text w-50 text-center">
+                                <a href="mailto:info@demowebsite.com">
+                                    <span>info@demowebsite.com</span>
+                                </a>
+                                <a href="mailto:hello@demowebsite.com">
+                                    <span>hello@demowebsite.com</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- stay close -->
+        <section class="overflow-hidden">
+            <div class="stay-close-img">
+                <img src="./assests/images/contact/contact-img.jpg" alt="contact-img" class="img-fluid">
+            </div>
+        </section>
+
+        <!-- sub-location  -->
+        <section class="stay-close position-relative">
+            <div class="container bg-primary py-100">
+                <h2 class="text-center fs-1 fw-semibold pb-5">Stay close</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="col-4 d-flex justify-content-end col-xxl-4 col-xl-4 col-lg-6 col-md-9  justify-content-md-center justify-content-lg-center">
+                        <div class="location text-center w-75">
+                            <img src="./assests/images/contact/india.png" alt="india" class="pb-3" style="width: 50px;">
+                            <p class="pe-5 ps-5 mb-0 pb-2">1234 MG road, Bengaluru, Karnataka 560001, India</p>
+                            <a class="d-block text-secondary"
+                                href="mailto:contact@demowebsite.com">contact@demowebsite.com</a>
+                            <a href="tel:+9198765-43210" class="d-block pb-3 text-secondary">+91 98765-43210</a>
+                            <h6 class="fw-semibold">Bengaluru</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-md-9  justify-content-md-center justify-content-lg-center">
+                        <div class="location text-center w-75">
+                            <img src="./assests/images/contact/usa.png" alt="usa" class="pb-3" style="width: 50px;">
+                            <p class="pe-5 ps-5 mb-0 pb-2">56 High street, London, WC1A 1AA, United kingdom</p>
+                            <a class="d-block text-secondary"
+                                href="mailto:support@demowebsite.com">support@demowebsite.com</a>
+                            <a href="tel:+44 1234-567890" class="d-block pb-3 text-secondary">+44 1234-567890</a>
+                            <h6 class="fw-semibold">London</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-start  col-xxl-4 col-xl-4 col-md-9 justify-content-md-center justify-content-lg-center col-lg-6">
+                        <div class="location text-center w-75">
+                            <img src="./assests/images/contact/aus.png" alt="Australia" class="pb-3"
+                                style="width: 50px;">
+                            <p class="pe-5 ps-5 mb-0 pb-2">78 George street, Sydney, NSW 2000, Australia</p>
+                            <a class="d-block text-secondary"
+                                href="mailto:sales@demowebsite.com">sales@demowebsite.com</a>
+                            <a href="tel:+61 2 1234-5678" class="d-block pb-3 text-secondary">+61 2 1234-5678</a>
+                            <h6 class="fw-semibold">Sydney</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- carousel multiitems  -->
+         
+        <!-- form section  -->
+        <section class="reach-form pb-100">
+            <div class="container py-5">
+                <h2 class="text-center fs-1 fw-semibold pb-5">Reach out today</h2>
+                <form>
+                    <div class="row g-4">
+                        <!-- Left side -->
+                        <div class="col-md-6">
+                            <div class="mb-4">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control rounded-0 p-3" id="name" placeholder="Full name">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control rounded-0 p-3" id="email" placeholder="Email">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input type="tel" class="form-control rounded-0 p-3" id="phone"
+                                    placeholder="Phone number">
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="agree">
+                                <label class="form-check-label" for="agree">
+                                    I agree to the <a href="#">rules & policies</a> and acknowledge that my info will be
+                                    stored safely following the data guidelines.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Right side -->
+                        <div class="col-md-6 d-flex flex-column justify-content-between">
+                            <div class="mb-3 flex-grow-1">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control h-75 rounded-0" id="message" rows="7"
+                                    placeholder="Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary fw-semibold py-2 w-100 rounded-0">SEND
+                                MESSAGE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- map section iframe  -->
+        <section class="iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.867831212078!2d144.94493057569497!3d-37.816564671974874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d452b97c1ef%3A0xf0456760532d9f0!2sMarvel%20Stadium!5e0!3m2!1sen!2sin!4v1748804740917!5m2!1sen!2sin"
+                width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+   <footer class="bg-primary">
+        <div class="footer-news py-100 border-bottom">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-xxl-3 col-xl-3 col-md-6 col-sm-12">
+                        <div class="news-content">
+                            <h3 class="fs-1 fw-semibold">Newsletter</h3>
+                            <p>Subscribe our newsletter to get the latest updates on our products.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xxl-3 col-xl-3 col-md-6 col-sm-12">
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control pt-2 pb-2 pe-5 ps-5 rounded-0 text-center"
+                                    placeholder="Enter your email">
+                            </div>
+                            <button type="submit"
+                                class="btn bg-secondary text-white fw-bold rounded-0 pt-2 pb-2 fs-5   w-100 pe-5 ps-5">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-xxl-6 col-xl-6 col-md-12 col-sm-12">
+                        <div class="foot-img d-flex justify-content-end">
+                            <div class="row justify-content-end">
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot`.jpg" alt="footer1" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot2.jpg" alt="footer2" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot3.jpg" alt="footer3" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="footer-img">
+                                        <img src="./assests/images/footer/foot4.jpg" alt="footer4" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer py-100">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-3 col-lg-2 order-2 order-lg-0">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Information</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">About us</a></li>
+                                <li class="pb-2"><a href="#">Contact us</a></li>
+                                <li class="pb-2"><a href="#">Faqs</a></li>
+                                <li class="pb-2"><a href="#">News</a></li>
+                                <li class="pb-2"><a href="#">Store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-3 order-lg-1">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Quick links</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">404</a></li>
+                                <li class="pb-2"><a href="#">Coming soon</a></li>
+                                <li class="pb-2"><a href="#">Cookie</a></li>
+                                <li class="pb-2"><a href="#">Legal</a></li>
+                                <li class="pb-2"><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 order-first order-lg-2">
+                        <div class="foot-logo text-center">
+                            <a href="#">
+                                <img src="./assests/images/logo/logo.png" alt="footer-logo"
+                                    class="img-fluid mx-auto d-block" style="width: 100%; max-width: 120px;">
+                            </a>
+                        </div>
+                        <p class="text-center pt-4">easily store your golf clubs, golf balls, tees and more in the
+                            numerous storage pockets.</p>
+
+                        <div class="socials d-flex gap-3 justify-content-center">
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-box bg-white d-flex rounded-circle justify-content-center align-items-center border"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-4 order-lg-3">
+
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Policies</h5>
+                            <ul>
+                                <li class="pb-2"><a href="#">Payment policies</a></li>
+                                <li class="pb-2"><a href="#">Privacy policies</a></li>
+                                <li class="pb-2"><a href="#">Return policies</a></li>
+                                <li class="pb-2"><a href="#">Shipping policies</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2 order-5 order-lg-4">
+                        <div class="foot-head">
+                            <h5 class="fw-semibold pb-3 text-secondary">Contact us </h5>
+                            <ul>
+                                <li class="pb-3"><a href="https://maps.app.goo.gl/t6encnEcpKUsKrMe9"
+                                        target="_blank">1234 MG road, Bengaluru
+                                        Karnataka 560001, India</a></li>
+                                <li class="pb-3"><a href="tel:98765-43210">+91 98765-43210</a></li>
+                                <li style="max-width: 200px; word-break: break-word;"><a
+                                        href="mailto:info@demowebsite.com">info@demowebsite.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-bottom p-3 bg-white">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-3">
+                        <p class="m-0">Powered by spacingtechTM</p>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <div class="bottom-img d-flex">
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-american.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-maestro.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-paypal.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="pay-app">
+                                <a href="#">
+                                    <img src="./assests/images/footer/paying-visa.png" alt="" style="width: 40px;">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- js  -->
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item');
+
+        items.forEach((el) => {
+            const minPerSlide = 3;
+            let next = el.nextElementSibling;
+            for (let i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    next = items[0];
+                }
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
