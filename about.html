@@ -31,7 +31,7 @@
 
 <body>
 
-   <header>
+    <header>
         <div class="navbar p-3 bg-primary">
             <div class="container">
                 <div class="row align-items-center">
@@ -74,13 +74,13 @@
                                         <li><a class="dropdown-item" href="#">Blog Post 2</a></li>
                                     </ul>
                                 </li>
-                               
-                                 <li class="nav-item">
+
+                                <li class="nav-item">
                                     <a class="nav-link fs-6 fw-medium text-dark text-uppercase custom-hover position-relative fw-semibold"
                                         href="./about.html">About Us
                                     </a>
                                 </li>
-                                 <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link fs-6 fw-medium text-dark text-uppercase custom-hover position-relative fw-semibold"
                                         href="./contact.html">Contact
                                     </a>
@@ -314,7 +314,8 @@
         <section class="specification py-100">
             <div class="container">
                 <div class="row justify-content-center g-4">
-                    <div class="col-4 d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div
+                        class="col-4 d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div
                             class="spec-bx text-center d-flex justify-content-center align-items-center flex-column w-75">
                             <div class="spec-icon bg-primary d-flex justify-content-center align-items-center mb-4"
@@ -327,7 +328,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div
+                        class="col-4 d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div
                             class="spec-bx text-center d-flex justify-content-center align-items-center flex-column w-75">
                             <div class="spec-icon bg-primary d-flex justify-content-center align-items-center mb-4"
@@ -340,7 +342,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div
+                        class="col-4 d-flex justify-content-center col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div
                             class="spec-bx text-center d-flex justify-content-center align-items-center flex-column w-75">
                             <div class="spec-icon bg-primary d-flex justify-content-center align-items-center mb-4"
@@ -544,6 +547,29 @@
         </div>
 
     </div>
+
+    <button id="backToTop" title="Back to Top" aria-label="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 200) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        backToTop.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
     <!-- js file links  -->
     <script src="./assests/js/bootstrap.min.js"></script>
